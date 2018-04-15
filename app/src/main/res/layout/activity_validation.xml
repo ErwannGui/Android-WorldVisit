@@ -9,13 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+        <Button
+            android:id="@+id/dayVisit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="365dp"
+            android:layout_height="94dp"
+            android:background="@color/colorAccent" />
 
         <CalendarView
             android:id="@+id/calendar"
