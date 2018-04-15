@@ -1,5 +1,6 @@
 package ynov.worldvisit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -34,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                databaseHelper.addpaysDetail(etname.getText().toString());
+                /*databaseHelper.addpaysDetail(etname.getText().toString());*/
                 etname.setText("");
                 Toast.makeText(MainActivity.this, "Stored Successfully!", Toast.LENGTH_SHORT).show();
             }
@@ -49,5 +50,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void addCountry(View view) {
+        Intent intent = new Intent(this, Research.class);
+        /*intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);*/
+        startActivity(intent);
     }
 }
