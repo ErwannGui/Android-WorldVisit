@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WorldVisit.iml" filepath="$PROJECT_DIR$/WorldVisit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android-WorldVisit.iml" filepath="$PROJECT_DIR$/Android-WorldVisit.iml" />
+      <module fileurl="file://Y:\Ynov\Android_Studio\Android-WorldVisit\WorldVisit.iml" filepath="Y:\Ynov\Android_Studio\Android-WorldVisit\WorldVisit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://Y:\Ynov\Android_Studio\Android-WorldVisit\app\app.iml" filepath="Y:\Ynov\Android_Studio\Android-WorldVisit\app\app.iml" />
     </modules>
   </component>
 </project>
