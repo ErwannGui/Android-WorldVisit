@@ -26,30 +26,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         databaseHelper = new DatabaseHelper(this);
-        tvnames = (TextView) findViewById(R.id.tvnames);
-
-        btnStore = (Button) findViewById(R.id.btnstore);
-        btnGetall = (Button) findViewById(R.id.btnget);
-        etname = (EditText) findViewById(R.id.etname);
-
-        btnStore.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                /*databaseHelper.addpaysDetail(etname.getText().toString());*/
-                etname.setText("");
-                Toast.makeText(MainActivity.this, "Stored Successfully!", Toast.LENGTH_SHORT).show();
-            }
-        });
-        btnGetall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                arrayList = databaseHelper.getAllpaysList();
-                tvnames.setText("");
-                for (int i = 0; i < arrayList.size(); i++){
-                    tvnames.setText(tvnames.getText().toString()+", "+arrayList.get(i));
-                }
-            }
-        });
     }
 
     public void addCountry(View view) {
