@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*databaseHelper.addpaysDetail(etname.getText().toString());*/
+                databaseHelper.addpaysDetail(etname.getText().toString());
                 etname.setText("");
                 Toast.makeText(MainActivity.this, "Stored Successfully!", Toast.LENGTH_SHORT).show();
             }
