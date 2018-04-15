@@ -17,18 +17,32 @@
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="365dp"
             android:layout_height="94dp"
-            android:background="@color/colorAccent" />
+            android:background="@color/colorAccent"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <CalendarView
             android:id="@+id/calendar"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:firstDayOfWeek="2"
             android:maxDate="01/01/2019"
             android:minDate="01/01/2018"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="152dp" />
+
+        <Button
+            android:id="@+id/validation"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="#81c784"
+            android:onClick="backToHome"
+            android:text="Valider"
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
