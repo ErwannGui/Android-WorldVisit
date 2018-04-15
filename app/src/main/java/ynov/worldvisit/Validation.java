@@ -13,6 +13,11 @@ import ynov.worldvisit.database.DatabaseHelper;
 
 public class Validation extends AppCompatActivity {
 
+    private DatabaseHelper databaseHelper;
+    private String name = new String();
+    private String capital = new String();
+    private String region = new String();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +90,8 @@ public class Validation extends AppCompatActivity {
     }
 
     public void backToHome(View view) {
+
+        databaseHelper.addpaysDetail("France", "Paris", "Europe", "15-04-2018");
         finish();
         Intent intent = new Intent(this, MainActivity.class);
         /*intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);*/

@@ -1,5 +1,6 @@
 package ynov.worldvisit;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
@@ -108,15 +109,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             region = (TextView) itemView.findViewById(R.id.region);;
             flag = (ImageView) itemView.findViewById(R.id.flag);
 
-            /*itemView.setOnClickListener(new View.OnClickListener() {
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    new AlertDialog.Builder(itemView.getContext())
-                            .setTitle(countries[1])
-                            .setMessage(currentPair.second)
-                            .show();
+                    /*Intent intent = new Intent(this, Validation.class);
+                    startActivity(intent);*/
+                    // Il me reste a trouve run moyen d'envoyer les données de la destination selectonnée au formulaire d'entrée en base de donnée puis à le finalise et le valider dans la page de validation
                 }
-            });*/
+            });
         }
 
         public void display(String[] country) {
