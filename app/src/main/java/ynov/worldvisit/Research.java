@@ -1,9 +1,11 @@
 package ynov.worldvisit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -95,5 +97,11 @@ public class Research extends AppCompatActivity {
         *  Cette classe a été réimportée et adaptée afin de fonctionner dans le cas présent
         *  Link : http://tutorielandroid.francoiscolin.fr/recupjson.php
         */
+    }
+
+    public void validateVisit(View view) {
+        Intent intent = new Intent(this, Validation.class);
+        /*intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);*/
+        startActivity(intent);
     }
 }
